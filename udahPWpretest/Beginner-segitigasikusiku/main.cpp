@@ -4,25 +4,17 @@ using namespace std;
 
 int main()
 {
-    int angka, mod;
+    int angka, a, b;
     cout << "Beginner segitiga siku siku bilangan prima" << endl;
 
     cout << "masukan angka: ";
     cin>>angka;
 
-    for(int tinggi=1;tinggi<=angka;tinggi++){
-        for(int alas=1;alas<=tinggi;alas++){
-            cout<<alas<<" ";
+    for(a=1;a<=angka;a++){
+        for(b=1;b<=a;b++){
+            cout<<b<<" ";
         }
         cout<<endl;
     }
-
-   /* for(int i=1; i<=angka; i++){
-        mod = 1;
-        for(int j=1; j<10; j++){
-            cout<<j;
-        }
-        cout<<endl;
-    } */
     return 0;
 }
