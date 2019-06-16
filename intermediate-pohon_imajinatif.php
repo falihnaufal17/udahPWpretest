@@ -4,18 +4,24 @@
 	function musimSemi($tahun, $tinggiAwal)
 	{
 		$original = $tinggiAwal;
-		if($tahun > 0){
-			$tinggiAkhir = $tinggiAwal *= 2;
-			print("Tahun: " .$tahun. " Tinggi Awal: " .$original. " Tinggi Akhir: " .$tinggiAkhir. " Pada musim semi");
+		for ($i = 0; $i < $tahun; $i++) {
+			
+			if($tahun > 0){
+				$tinggiAkhir = $tinggiAwal *= 2;
+				print("Tahun: " .$tahun. " Tinggi Awal: " .$original. " Tinggi Akhir: " .$tinggiAkhir. " Pada musim semi");
+			}	
 		}
 	}
 
 	function musimGugur($tahun, $tinggiAwal)
 	{
 		$original = $tinggiAwal;
-		if($tahun > 0){
-			$tinggiAkhir = $tinggiAwal += 1;
-			print("Tahun: " .$tahun. " Tinggi Awal: " .$original. " Tinggi Akhir: " .$tinggiAkhir. " Pada musim gugur");
+		for ($i = 0; $i < $tahun; $i++) {
+			
+			if($tahun > 0){
+				$tinggiAkhir = $tinggiAwal += 1;
+				print("Tahun: " .$tahun. " Tinggi Awal: " .$original. " Tinggi Akhir: " .$tinggiAkhir. " Pada musim gugur");
+			}
 		}
 	}
 
