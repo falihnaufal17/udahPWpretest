@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     double bekal = 50000, hargamie = 2500;
-    int qty, bonus;
+    int qty, bonus, sisa, hasil;
 
     cout << "Beginner: Simple Math" << endl;
 
@@ -16,9 +16,10 @@ int main()
 
     cout << "Mie instan yang diperoleh dengan bekal 50000: " << qty<<endl;
 
-    if(qty >= 4){
-        bonus = qty + 1;
-    }
-    cout<<"banyaknya mie instan yang dapat diperoleh "<<bonus + qty<<endl;
+    sisa = qty % 4;
+    bonus = (qty - sisa)/4;
+    hasil = qty + bonus;
+
+    cout<<"banyaknya mie instan yang dapat diperoleh "<<hasil<<endl;
     return 0;
 }
